@@ -43,7 +43,7 @@ const Login = () => {
 
                     {/* Login Button */}
                     <Pressable
-                        className="w-full bg-green-500 p-4 rounded-xl mt-6 shadow-sm active:bg-green-600"
+                        className="w-full bg-blue-500 p-4 rounded-xl mt-6 shadow-sm active:bg-green-600"
                         onPress={() => router.replace("/home")}
                     >
                         <Text className="text-white text-center font-bold text-lg">Login</Text>
@@ -52,7 +52,7 @@ const Login = () => {
 
                 {/* Footer / Register Link */}
                 <View className="flex-row justify-center mt-8">
-                    <Text className="text-gray-500">Don't have an account? </Text>
+                    <Text className="text-gray-500">Do not have an account? </Text>
                     <TouchableOpacity
                         onPress={() => router.push("/register")}>
                         <Text className="text-green-500 font-bold">Register</Text>
