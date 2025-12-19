@@ -18,15 +18,23 @@ const Register = () => {
                 {/* Form Section */}
                 <View className="w-full space-y-4">
 
-                    {/* Email Input */}
+                    {/* Name Input */}
                     <View>
+                        <Text className="text-gray-700 mb-2 font-medium ml-1">Name</Text>
+                        <TextInput
+                            className="w-full bg-white border border-gray-300 rounded-xl p-4 text-gray-700 focus:border-green-500"
+                            placeholder="Enter your name"
+                            placeholderTextColor={"#9CA3AF"}
+                        />
+                    </View>
+
+                    {/* Email Input */}
+                    <View className="mt-4">
                         <Text className="text-gray-700 mb-2 font-medium ml-1">Email</Text>
                         <TextInput
                             className="w-full bg-white border border-gray-300 rounded-xl p-4 text-gray-700 focus:border-green-500"
                             placeholder="Enter your email"
                             placeholderTextColor={"#9CA3AF"}
-                            keyboardType="email-address"
-                            autoCapitalize="none"
                         />
                     </View>
 
@@ -38,6 +46,16 @@ const Register = () => {
                             placeholder="Enter your password"
                             placeholderTextColor={"#9CA3AF"}
                             secureTextEntry
+                        />
+                    </View>
+
+                    {/* Confirm Password Input */}
+                    <View className="mt-4">
+                        <Text className="text-gray-700 mb-2 font-medium ml-1">Confirm Password</Text>
+                        <TextInput
+                            className="w-full bg-white border border-gray-300 rounded-xl p-4 text-gray-700 focus:border-green-500"
+                            placeholder="Confirm password"
+                            placeholderTextColor={"#9CA3AF"}
                         />
                     </View>
 
